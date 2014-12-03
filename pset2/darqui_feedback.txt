@@ -1,0 +1,48 @@
+23:09:33    @map | caesar even                                                                                      │
+23:09:36    @map | in your main                                                                                     │
+23:09:49    @map | arg check early and 'exit out' at the top.. don't let it nest                                    │
+23:09:50    @map | ie                                                                                               │
+23:10:01    @map | if (argc < 2){ ... error/usage }
+23:10:01    @map | if (argc < 2){ ... error/usage }                                                                 │@adarq
+23:10:09    @map | then the rest just follows.. won't be nested                                                     │@BigCount-
+23:10:18     ob_ | word                                                                                             │@buttpoker
+23:10:22    @map | also you have encrypt                                                                            │@dillie
+23:10:24    @map | maybe have                                                                                       │@enwood
+23:10:31    @map | encryptb which encrypts one byte like you do                                                     │@franky 
+23:10:47    @map | then encrypts which encrypts astring, which loops over the string using encryptb                 │@frinds
+23:10:53    @map | some composition of the two                                                                      │@gear
+23:10:56    @map | so that you can do something like                                                                │@herog
+23:11:08    @map | printf("%s\n", encrypts(message));                                                               │@hisir
+23:11:23     ob_ | oh nice                                                                                          │@jr
+23:11:32    @map | finally.. instead of using 'numbers' for most of those character codes.. use the '' char         │@logicus
+23:11:35    @map | ie                                                                                               │@lord
+23:11:56    @map | if (letter <= 'Z') {                                                                             │@mailblade
+23:11:57     ob_ | - 'A'                                                                                            │@map
+23:12:00    @map | etc                                                                                              │@mordek
+23:12:03    @map | ya                                                                                               │@nck
+23:12:16    @map | letter_s = letter - 'Z'                                                                          │@r1sk
+23:12:21     --> | newbie (~awkword@209.212.134.201) has joined #jumping                                            │@risk
+23:12:27     ob_ | thanks                                                                                           │@risk-
+23:12:37    @map | makes it easier to understand for others and for yourself looking back                           │@risk`
+23:12:37    @map | np                                                                                               │@sp1ke
+23:13:15    @map | also for example you could clean this up a bit like                                              │@vertical
+23:13:19    @map | in encrypt                                                                                       │@whyso
+23:13:28    @map | you have, if (letter > 57) { ..                                                                  │@winning
+23:13:40    @map | then if (letter <= ) { ... return .. } if { ... return } } else                                  │@winter
+23:13:42    @map | you could do                                                                                     │+Joeb
+23:13:52    @map | if (letter <= 'BLAH') {                                                                          │ Bailito
+23:14:06    @map |  letter_s = letter - 'BLAH';                                                                     │ blastoshi
+23:14:19    @map | letter_s = (letter_s + key) % blah;                                                              │ Bruk0ut
+23:14:23    @map | then,                                                                                            │ dv310p3r
+23:14:33    @map | do the 'return letter_s' after both of those if's                                                │ gabkicks
+23:14:34    @map | so                                                                                               │ GGG
+23:14:38    @map | if {                                                                                             │ gutts
+23:14:40    @map |  set something                                                                                   │ hskl
+23:14:43    @map | } else if {                                                                                      │ linz
+23:14:46    @map |  set something                                                                                   │ lore
+23:14:48    @map | }                                                                                                │ mstf
+23:14:51    @map | return letter_s                                                                                  │ newbie
+23:14:59    @map | it's not a biggie but                                                                            │ ob_
+23:15:10     ob_ | makes sense                                                                                      │ pcap
+23:15:11    @map | it just then narrows your 'return' to one spot, instead of two                                   │ peaces
+23:15:17     ob_ | yea        
