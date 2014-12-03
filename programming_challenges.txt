@@ -1,0 +1,3 @@
+http://en.wikipedia.org/wiki/Competitive_programming
+http://programmingprogress.blogspot.com/2014/11/competitive-programming-sites-by.html
+https://github.com/vhf/free-programming-books/blob/master/problem-sets-competitive-programming.md
